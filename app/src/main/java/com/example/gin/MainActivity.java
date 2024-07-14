@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     public void modelCall(){
 
 
-        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-1.5-flash", "AIzaSyDqXYiNQ2E3PIBn0ES9KLPNDdneexdJjZs");
+        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-1.5-flash", "api");
         GenerativeModelFutures model = GenerativeModelFutures.from(gm);
 
         Content content = new Content.Builder()
