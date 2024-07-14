@@ -42,9 +42,6 @@ public class MainActivity extends AppCompatActivity {
         btnGen=findViewById(R.id.btnGen);
 
 
-
-
-
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -64,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     public void modelCall(){
 
 
-        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-1.5-flash", "api");
+        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-1.5-flash", "AIzaSyDqXYiNQ2E3PIBn0ES9KLPNDdneexdJjZs");
         GenerativeModelFutures model = GenerativeModelFutures.from(gm);
 
         Content content = new Content.Builder()
